@@ -54,9 +54,8 @@ Ensure your dataset is available in the project directory.
     - Save the model and vectorizer
 
 3. Test the model interactively by entering a message for prediction:
-    ```
-    Enter text to predict: [Your Message Here]
-    ```
+    
+    you win free iphone today
 
 ### Save and Load the Model
 
