@@ -30,7 +30,7 @@ Ensure your dataset is available in the project directory.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/spam-detection-naive-bayes.git
+    git clone https://github.com/bekam18/spam-detection-naive-bayes.git
     cd spam-detection-naive-bayes
     ```
 
@@ -45,27 +45,23 @@ Ensure your dataset is available in the project directory.
 
 ### Train and Evaluate the Model
 
-1. Run the script to train the Naive Bayes model and evaluate its accuracy:
-    ```bash
-    python spam_detection.py
-    ```
+1. Open the Jupyter Notebook (`spam_detection.ipynb`) in your environment.
 
-2. Enter a message to test its classification interactively:
-    ```bash
+2. Run all the cells step by step to:
+    - Load the dataset
+    - Train the Naive Bayes model
+    - Evaluate its accuracy
+    - Save the model and vectorizer
+
+3. Test the model interactively by entering a message for prediction:
+    ```
     Enter text to predict: [Your Message Here]
     ```
 
 ### Save and Load the Model
 
-- Save the trained model and vectorizer:
-    ```bash
-    python spam_detection.py
-    ```
-
-- Load the saved model and vectorizer for new predictions:
-    ```bash
-    python spam_detection.py
-    ```
+- Save the trained model and vectorizer using Joblib within the notebook.
+- Load the saved model and vectorizer for new predictions using the appropriate notebook cells.
 
 ## Example Output
 
@@ -79,7 +75,7 @@ Spam Words Highlighted: ['win', 'free', 'now']
 
 ## Files in the Repository
 
-- `spam_detection.py`: Main script for training, testing, and saving the model.
+- `spam_detection.ipynb`: Jupyter Notebook for training, testing, and saving the model.
 - `emails.csv`: Example dataset for training and testing (not included; please add your own dataset).
 - `naive_bayes_model.pkl`: Saved Naive Bayes model.
 - `tfidf_vectorizer.pkl`: Saved vectorizer for text preprocessing.
